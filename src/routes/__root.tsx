@@ -7,6 +7,7 @@ import {
   Scripts,
 } from '@tanstack/react-router'
 
+import { NotFound } from '~/components/NotFound'
 import appCss from '../styles/app.css?url'
 
 export const Route = createRootRoute({
@@ -27,6 +28,7 @@ export const Route = createRootRoute({
       { rel: 'stylesheet', href: appCss },
     ],
   }),
+  notFoundComponent: () => <NotFound />,
   component: RootComponent,
 })
 

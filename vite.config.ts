@@ -16,7 +16,11 @@ export default defineConfig({
       imports: ['react'],
       dts: 'src/auto-imports.d.ts',
     }),
-    tanstackStart(),
+    tanstackStart({
+      spa: {
+        enabled: false,
+      },
+    }),
     viteReact({
       babel: {
         plugins: ['babel-plugin-react-compiler'],
