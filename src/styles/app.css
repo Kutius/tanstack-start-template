@@ -1,1 +1,9 @@
 @import 'tailwindcss';
+
+:root {
+  font-family: 'Inter', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: theme('colors.slate.50');
+  color: theme('colors.slate.700');
+}
